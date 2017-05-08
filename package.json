@@ -55,7 +55,9 @@
     "webpack": "^2.3.3",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "stylus-loader": "^2.4.0",
+    "stylus": "0.52.4"
   },
   "engines": {
     "node": ">= 4.0.0",
