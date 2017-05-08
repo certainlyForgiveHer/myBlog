@@ -9,7 +9,7 @@
     <div class="layout-content">
         <div class="left-nav">
           <div class="avatar-wrapper">
-            <img class="avatar" height="200px" width="200px" :src="avatar"/>
+            <img class="avatar" height="300px" :src="avatar"/>
             <div class="name">
               <ul>
                 <li class="list" v-for="info in autherInfo">
@@ -47,7 +47,7 @@
     data() {
       return {
         imgUrl: require('../assets/logo.png'),
-        avatar: require('../assets/avatar.jpg'),
+        avatar: require('../assets/avatar1.jpg'),
         navList: [
             {
               desc: '个人博客',
