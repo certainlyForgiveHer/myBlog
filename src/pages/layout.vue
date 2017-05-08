@@ -27,7 +27,9 @@
           </div>
         </div>
         <div class="right-content">
-          <router-view>111</router-view>
+          <transition class="fade" name="fade" mode="out-in">
+            <router-view>111</router-view>
+          </transition>
         </div>
     </div>
     <div class="layout-footer">
@@ -96,13 +98,13 @@
     .layout-content
       position: absolute
       display: flex
-      top: 110px
-      left: 10%
+      top: 70px
+      left: 3%
       height: 700px
-      width: 60%
+      width: 90%
       .left-nav
         flex: 0 0 80px
-        margin-right: 10%
+        margin-right: 40px
         &.left-nav:hover
           transition: all 0.3s
         .avatar-wrapper
@@ -138,6 +140,10 @@
         padding: 18px 18px
         flex: 1 1 50%
         background-color: #EFEFEF
+        .fade-enter,.fade-leave-active
+          opacity: 0
+        .fade-enter-active,.fade-leave-active
+          transition: opacity .5s
     .layout-footer
       position: fixed
       bottom: 0
