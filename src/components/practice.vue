@@ -25,11 +25,12 @@
       display: inline-block
       margin-bottom: 5px
       font-size: 17px
+      line-height: 30px
     .time
       float: right
     p
       font-size: 14px
-      line-height: 20px
+      line-height: 26px
       padding: 4px 8px
       text-align:justify
 

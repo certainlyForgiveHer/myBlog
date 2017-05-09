@@ -87,17 +87,6 @@
             负责团队项目代码的整合，调试，并以第一作者身份发表了"Design of Intelligent Parking System Based on Cloud Platform"，文章已被2016年云计算国际会议中心（ICC 2016）录用。
           </p>
         </practice>
-        <practice :info="{ title: '异构体系结构性能和功耗分析工具优化测试', time: '2016.06 - 2016.09' }">
-          <p slot="text">
-            针对NUMA体系架构，在Linux下的GEM5平台运行PARSEC测试集进行测试。
-          </p>
-          <p slot="text">
-            对比多核架构与CC-NUMA架构多线程程序的运行特点。
-          </p>
-          <p slot="text">
-            撰写测试用例文档，测试日志文档
-          </p>
-        </practice>
       </div>
       <div class="detail-wrapper">
         <bunder :information="{title:'获奖情况', translate: 'Awards'}"></bunder>
@@ -152,17 +141,18 @@
         .text
           padding: 5px 3px
           font-size: 17px
+          line-height: 20px
       .skills
         .skill
-          padding-bottom: 4px
+          padding-bottom: 7px
           .name
             padding: 0 3px 0 8px
             display: inline-block
             font-size: 17px
+            line-height: 20px
           .score
-            vertical-align: top
             float: right
-            display: inline-block
+            top: 4px
     .middle
       margin-right: 25px
     .detail-wrapper
@@ -177,15 +167,16 @@
           line-height: 20px
         .detail
           font-size: 14px
+          line-height: 20px
           color: dimgray
       .awards-wrapper
-        font-size: 14px
-        line-height: 20px
+        font-size: 17px
+        line-height: 30px
         padding: 4px 8px
         text-align:justify
       .rating-wrapper
-        font-size: 14px
-        line-height: 20px
+        font-size: 17px
+        line-height: 30px
         padding: 4px 8px
         text-align:justify
 </style>

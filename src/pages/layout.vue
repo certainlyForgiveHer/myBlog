@@ -4,13 +4,13 @@
       <div class="brand">
         <img width="50" height="50" :src="imgUrl"/>
       </div>
-      <div class='desc'>常泽清的个人主页</div>
+      <div class='desc'>个人主页</div>
     </div>
     <div class="layout-content">
         <div class="left-nav">
           <div class="avatar-wrapper">
             <img class="avatar" height="300px" :src="avatar"/>
-            <div class="name">
+            <div class="desc">
               <ul>
                 <li class="list" v-for="info in autherInfo">
                   {{ info }}
@@ -62,7 +62,7 @@
               detail: '/github'
             }
             ],
-        autherInfo: ['常泽清', '北京工业大学', '计算机科学']
+        autherInfo: ['常泽清', '北京工业大学', '计算机科学与技术']
       }
     },
     created() {
@@ -87,12 +87,13 @@
       width: 100%
       height: 50px
       padding: 5px 40px
-      background-color: #EFEFEF
+      background-color: #FFFFFF
+      border-bottom: 1px solid rgba(157, 153, 159, 0.2)
       .brand
         float: left
       .desc
         color: #24292E
-        font-size: 25px
+        font-size: 30px
         line-height: 50px
         text-align: center
     .layout-content
@@ -111,11 +112,11 @@
           transition: all 0.3s
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
           margin-bottom: 10px
-          background-color: #EFEFEF
-          .name
-            padding: 8px 8px
+          background-color: #FFFFFF
+          .desc
+            padding: 8px 8%
             font-size: 18px
-            line-height: 22px
+            line-height: 25px
             color: #2C3E50
           &.avatar-wrapper:hover
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -126,7 +127,9 @@
             padding: 3px 0px
             font-size: 18px
             text-align: center
-            background-color: #EFEFEF
+            background-color: #FFFFFF
+            &.list:last-child
+              border-bottom: none
             a
               color: #2C3E50
           .list:hover
@@ -138,8 +141,7 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       .right-content
         padding: 18px 18px
-        flex: 1 1 50%
-        background-color: #EFEFEF
+        flex: 1 1 auto
         .fade-enter,.fade-leave-active
           opacity: 0
         .fade-enter-active,.fade-leave-active
